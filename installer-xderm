@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wget --no-check-certificate "https://github.com/vitoharhari/xderm-gui-1.8/raw/main/xderm.zip" -O /root/xderm.zip
+rm -rf /www/xderm
+unzip xderm.zip -d /www/xderm
+chmod 777 /www/xderm/*
+rm -rf /root/xderm.zip
+rm -rf installer-xderm
+exit
+
